@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylsheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="nav"> 
+              <h1>PORTFOLIO</h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <div class="header-text">
+                <h1>Hello, It's Me <br><span>Gandhari Harshitha</span></h1>
+                <h1>And I'm a <span class="text"></span></h1> 
+            </div>
+        </div>  
+      </div>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="mypich.jpg" alt="Harshitha Photo">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>I'm Power Platform Developer and I'm excited to tackle real-world challenges, amplify productivity, and continuously expand my skills in the ever-evolving Power Platform landscape. With a solid foundation and a growth mindset, I'm poised to make a meaningful impact on innovative projects. Let's connect and explore opportunities to revolutionize business solutions together.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('Skills')">Skills</p>
+                <p class="tab-links" onclick="openTab('Experience')">Experience</p> 
+              </div>
+              <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                  <li><span>Power Platform Developer</span><br>Low-code Development</li>
+                  <li><span>Power App Developer</span><br>Builds Custom Business Apps</li>
+                  <li><span>Power Automate</span><br>Automate Business Processes</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Experience">
+                <ul>
+                  <li><span>September 2024 - Present</span><br>Junior Power App Developer Intern at Sreeman Solutions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1> 
+          <div class="services-list">
+            <div>
+              <h2>Power App Developer</h2>
+              <p>A Power Apps developer designs and builds custom business applications using the Power Platform. They integrate data sources, automate workflows, and create user-friendly interfaces. With expertise in low-code development, they collaborate with stakeholders to deliver solutions. Proficient in Power Apps, Power Automate, and Power BI, they drive business efficiency and innovation.</p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <h2>Power Automate</h2>
+              <p>A Power Automate developer automates business processes and workflows using low-code tools. They design and implement automated solutions, integrating various data sources and services. With expertise in workflow automation, they streamline business operations and increase efficiency. By leveraging Power Automate, they reduce manual tasks and enhance productivity.</p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <img src="portfoliopic.png" alt="Portfolio Image">
+                        <div class="layer">
+                            <h3>PORTFOLIO</h3>
+                            <p>Developed an impressive portfolio project combining elegant design and intuitive navigation for a fascinating experience for the user.The gole is to captive users,making the design eye-cotchy.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+              <p><i class="fa-solid fa-phone"></i> 3366885522</p>
+              <div class="social-icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/harshitha-gandhari-4ab67833b/"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="G_Harshitha_Resume (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JavaScript -->
+      <script>
+        function openTab(tabName) {
+            var i, tabContents, tabLinks;
+            
+            // Hide all tab contents
+            tabContents = document.getElementsByClassName("tab-contents");
+            for (i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active-tab");
+            }
+            
+            // Remove active class from all tab links
+            tabLinks = document.getElementsByClassName("tab-links");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+            }
+            
+            // Show the current tab and add the active class to the clicked link
+            document.getElementById(tabName).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <style>
+         .text {
+             font-size: 40px;
+             font-weight: bold;
+             color: #333;
+         }
+     </style>
+ </head>
+ <body>
+     <!-- Add a container for the animated text -->
+     <div class="text"></div>
+ 
+     <script>
+      window.onload=function(){
+         var typed = new Typed(".text", {
+             strings: ["Power Platform Developer", "Power App Developer", "Power Automate"],
+             typeSpeed: 100,
+             backSpeed: 100,
+             backDelay: 1000,
+             loop: true
+         });
+        }
+     </script>
+ 
+</body>
+</html>
